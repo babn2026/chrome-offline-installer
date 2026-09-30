@@ -1,6 +1,6 @@
 module github/bigmangos/chrome-offline-installer
 
-go 1.26
+go 1.23
 
 require github.com/go-resty/resty/v2 v2.17.2
 
