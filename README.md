@@ -4,7 +4,7 @@
 稳定版存档：<https://github.com/babn2026/chrome-offline-installer/releases>
 
 最近一次检测更新时间（UTC+8）：
-2026-09-30 21:23:42
+2026-09-30 21:27:58
 
 ## Contents
 
