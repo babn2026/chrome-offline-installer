@@ -1,0 +1,81 @@
+name: Check Update and Upload Releases
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */3 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup Go environment
+        uses: actions/setup-go@v3
+        with:
+          go-version: '1.26'
+
+      - name: Run
+        run: go run main.go
+
+      - name: Commit files
+        run: |
+          git config --local user.email "github-action[bot]@github.com"
+          git config --local user.name "github-action[bot]"
+          git pull --rebase --autostash
+          git add --all
+          git commit -m ":pencil: Auto update Chrome at  $(date +"%Y-%m-%d %H:%M")"
+          git push origin main
+
+      - name: Get Tag
+        id: get_tag
+        run: echo "tag=$(cat last_download.txt)" >> $GITHUB_ENV
+
+      - name: Check for EXE Files
+        id: check_files
+        run: |
+          if find . -name "*.exe" -print -quit | grep -q .; then
+            echo "exe_exists=true" >> $GITHUB_ENV
+          else
+            echo "exe_exists=false" >> $GITHUB_ENV
+          fi
+
+      - name: Check if Tag Exists
+        id: check_tag
+        run: |
+          if git rev-parse "refs/tags/${{ env.tag }}" >/dev/null 2>&1; then
+            echo "tag_exists=true" >> $GITHUB_ENV
+          else
+            echo "tag_exists=false" >> $GITHUB_ENV
+          fi
+
+      - name: Create Tag
+        if: env.exe_exists == 'true' && env.tag_exists == 'false'
+        run: |
+          git tag ${{ env.tag }}
+          git push origin ${{ env.tag }}
+
+      - name: Upload Release
+        if: env.exe_exists == 'true'
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ env.tag }}
+          files: |
+            *.exe
+
+      - name: Reset Main Branch
+        if: env.exe_exists == 'true' && env.tag_exists == 'false'
+        run: |
+          git checkout --orphan temp_branch
+          git add -A
+          git commit -m "init"
+          git push --force origin temp_branch:main
