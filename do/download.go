@@ -3,7 +3,7 @@ package do
 import (
 	"errors"
 	"fmt"
-	"github/bigmangos/chrome-offline-installer/internal/util"
+	"github/babn2026/chrome-offline-installer/internal/util"
 	"log/slog"
 	"os"
 	"path"
