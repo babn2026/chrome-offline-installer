@@ -1,10 +1,10 @@
 # Google Chrome 离线安装包
 本工程是 [Bush2021/chrome_installer](https://github.com/Bush2021/chrome_installer) Go实现，感谢原作者
 
-稳定版存档：<https://github.com/babn2026/chrome-offline-installer>
+稳定版存档：<https://github.com/babn2026/chrome-offline-installer/releases>
 
 最近一次检测更新时间（UTC+8）：
-2026-10-02 11:12:06
+2026-10-02 13:07:46
 
 ## Contents
 
