@@ -31,8 +31,8 @@ jobs:
         env:
           TZ: Asia/Shanghai
         run: |
-          git config --local user.email "428001830@qq.com"
-          git config --local user.name "babn2026"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git pull --rebase --autostash
           git add --all
           git commit -m ":pencil: Auto update Chrome at  $(date +"%Y-%m-%d %H:%M")"
