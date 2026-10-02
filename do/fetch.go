@@ -6,12 +6,12 @@ import (
 	"encoding/xml"
 	"errors"
 	"fmt"
-	"github/babn2026/chrome-offline-installer/internal/model"
-	"github/babn2026/chrome-offline-installer/internal/util"
 	"log/slog"
 	"strconv"
 	"strings"
 
+	"github.com/babn2026/chrome-offline-installer/internal/model"
+	"github.com/babn2026/chrome-offline-installer/internal/util"
 	"github.com/go-resty/resty/v2"
 )
 
