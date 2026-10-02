@@ -29,8 +29,8 @@ jobs:
 
       - name: Commit files
         run: |
-          git config --local user.email "github-action[bot]@github.com"
-          git config --local user.name "github-action[bot]"
+          git config --local user.email "428001830@qq.com"
+          git config --local user.name "babn2026"
           git pull --rebase --autostash
           git add --all
           git commit -m ":pencil: Auto update Chrome at  $(date +"%Y-%m-%d %H:%M")"
