@@ -28,6 +28,8 @@ jobs:
         run: go run main.go
 
       - name: Commit files
+        env:
+          TZ: Asia/Shanghai
         run: |
           git config --local user.email "428001830@qq.com"
           git config --local user.name "babn2026"
