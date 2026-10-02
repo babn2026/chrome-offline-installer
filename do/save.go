@@ -68,7 +68,7 @@ func SaveMarkdown(data map[string]*model.ChromeInstallerInfo) error {
 	var buf strings.Builder
 	buf.WriteString("# Google Chrome 离线安装包\n")
 	buf.WriteString("本工程是 [Bush2021/chrome_installer](https://github.com/Bush2021/chrome_installer) Go实现，感谢原作者\n\n")
-	buf.WriteString("稳定版存档：<https://github.com/babn2026/chrome-offline-installer>\n\n")
+	buf.WriteString("稳定版存档：<https://github.com/babn2026/chrome-offline-installer/releases>\n\n")
 	buf.WriteString("最近一次检测更新时间（UTC+8）：\n")
 	buf.WriteString(time.Now().In(loc).Format("2006-01-02 15:04:05"))
 
