@@ -1,4 +1,4 @@
-module github/bigmangos/chrome-offline-installer
+module github.com/babn2026/chrome-offline-installer
 
 go 1.26
 
