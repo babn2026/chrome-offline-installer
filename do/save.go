@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github/bigmangos/chrome-offline-installer/internal/model"
+	"github/babn2026/chrome-offline-installer/internal/model"
 	"log/slog"
 	"os"
 	"path"
