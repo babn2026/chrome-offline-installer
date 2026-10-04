@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/bigmangos/chrome-offline-installer/do"
+	"github.com/babn2026/chrome-offline-installer/do"
 	"log/slog"
 )
 
