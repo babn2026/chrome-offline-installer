@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/babn2026/chrome-offline-installer/internal/model"
+	"github/bigmangos/chrome-offline-installer/internal/model"
 	"log/slog"
 	"os"
 	"path"
@@ -68,7 +68,7 @@ func SaveMarkdown(data map[string]*model.ChromeInstallerInfo) error {
 	var buf strings.Builder
 	buf.WriteString("# Google Chrome 离线安装包\n")
 	buf.WriteString("本工程是 [Bush2021/chrome_installer](https://github.com/Bush2021/chrome_installer) Go实现，感谢原作者\n\n")
-	buf.WriteString("稳定版存档：<https://github.com/babn2026/chrome-offline-installer/releases>\n\n")
+	buf.WriteString("稳定版存档：<https://github.com/bigmangos/chrome-offline-installer/releases>\n\n")
 	buf.WriteString("最近一次检测更新时间（UTC+8）：\n")
 	buf.WriteString(time.Now().In(loc).Format("2006-01-02 15:04:05"))
 
@@ -115,12 +115,12 @@ func SaveMarkdown(data map[string]*model.ChromeInstallerInfo) error {
 				sha256Short = sha256Short[0:8]
 			}
 
-			urls := ""
+			var urls strings.Builder
 			for i, url := range d.Urls {
-				urls += fmt.Sprintf("[url-%d](%v) ", i, url)
+				urls.WriteString(fmt.Sprintf("[url-%d](%s) ", i, url))
 			}
 
-			buf.WriteString(fmt.Sprintf("| **%v** | `%v` | %.2f MB | `%v...` | %v |\n", archNames[arch], d.Version, formatSize(d.Size), sha256Short, urls))
+			buf.WriteString(fmt.Sprintf("| **%s** | `%s` | %.2f MB | `%s...` | %s |\n", archNames[arch], d.Version, formatSize(d.Size), sha256Short, urls.String()))
 		}
 
 		buf.WriteString("\n")
@@ -137,7 +137,7 @@ func SaveMarkdown(data map[string]*model.ChromeInstallerInfo) error {
 			}
 			name := path.Base(d.Urls[0])
 
-			buf.WriteString(fmt.Sprintf("%v %v\n", name, d.Sha256))
+			buf.WriteString(fmt.Sprintf("%s %s %s\n", arch, name, d.Sha256))
 		}
 
 		buf.WriteString("```\n\n")
