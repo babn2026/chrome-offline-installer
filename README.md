@@ -4,7 +4,7 @@
 稳定版存档：<https://github.com/babn2026/chrome-offline-installer/releases>
 
 最近一次检测更新时间（UTC+8）：
-2026-10-15 08:24:18
+2026-10-15 11:22:19
 
 ## Contents
 
@@ -80,7 +80,7 @@ x86 157.0.8092.0_chrome_installer_uncompressed.exe 69ae98a2a1585a04c70ee26cba386
 |--------------|---------|------|---------|----------|
 | **X64** | `158.0.8105.0` | 505.50 MB | `167563b8...` | [url-0](http://edgedl.me.gvt1.com/edgedl/release2/chrome/acfhmwjo5q5x4qgvz3yac24wunqq_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-1](https://edgedl.me.gvt1.com/edgedl/release2/chrome/acfhmwjo5q5x4qgvz3yac24wunqq_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-2](http://dl.google.com/release2/chrome/acfhmwjo5q5x4qgvz3yac24wunqq_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-3](https://dl.google.com/release2/chrome/acfhmwjo5q5x4qgvz3yac24wunqq_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-4](http://www.google.com/dl/release2/chrome/acfhmwjo5q5x4qgvz3yac24wunqq_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-5](https://www.google.com/dl/release2/chrome/acfhmwjo5q5x4qgvz3yac24wunqq_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe)  |
 | **ARM64** | `158.0.8105.0` | 481.48 MB | `7eaf5eaa...` | [url-0](http://edgedl.me.gvt1.com/edgedl/release2/chrome/adtajxx522wd3qbhunbcmjiiqjzq_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-1](https://edgedl.me.gvt1.com/edgedl/release2/chrome/adtajxx522wd3qbhunbcmjiiqjzq_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-2](http://dl.google.com/release2/chrome/adtajxx522wd3qbhunbcmjiiqjzq_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-3](https://dl.google.com/release2/chrome/adtajxx522wd3qbhunbcmjiiqjzq_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-4](http://www.google.com/dl/release2/chrome/adtajxx522wd3qbhunbcmjiiqjzq_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-5](https://www.google.com/dl/release2/chrome/adtajxx522wd3qbhunbcmjiiqjzq_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe)  |
-| **X86** | `158.0.8105.0` | 433.51 MB | `c96385d4...` | [url-0](http://edgedl.me.gvt1.com/edgedl/release2/chrome/acqhoht2ih7cy2z54ksrpfikju5a_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-1](https://edgedl.me.gvt1.com/edgedl/release2/chrome/acqhoht2ih7cy2z54ksrpfikju5a_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-2](http://dl.google.com/release2/chrome/acqhoht2ih7cy2z54ksrpfikju5a_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-3](https://dl.google.com/release2/chrome/acqhoht2ih7cy2z54ksrpfikju5a_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-4](http://www.google.com/dl/release2/chrome/acqhoht2ih7cy2z54ksrpfikju5a_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe) [url-5](https://www.google.com/dl/release2/chrome/acqhoht2ih7cy2z54ksrpfikju5a_158.0.8105.0/158.0.8105.0_chrome_installer_uncompressed.exe)  |
+| **X86** | `158.0.8105.1` | 617.38 MB | `cd26fa36...` | [url-0](http://edgedl.me.gvt1.com/edgedl/release2/chrome/cuxvwldtdr4qrh2vky4elgsnke_158.0.8105.1/158.0.8105.1_chrome_installer_uncompressed.exe) [url-1](https://edgedl.me.gvt1.com/edgedl/release2/chrome/cuxvwldtdr4qrh2vky4elgsnke_158.0.8105.1/158.0.8105.1_chrome_installer_uncompressed.exe) [url-2](http://dl.google.com/release2/chrome/cuxvwldtdr4qrh2vky4elgsnke_158.0.8105.1/158.0.8105.1_chrome_installer_uncompressed.exe) [url-3](https://dl.google.com/release2/chrome/cuxvwldtdr4qrh2vky4elgsnke_158.0.8105.1/158.0.8105.1_chrome_installer_uncompressed.exe) [url-4](http://www.google.com/dl/release2/chrome/cuxvwldtdr4qrh2vky4elgsnke_158.0.8105.1/158.0.8105.1_chrome_installer_uncompressed.exe) [url-5](https://www.google.com/dl/release2/chrome/cuxvwldtdr4qrh2vky4elgsnke_158.0.8105.1/158.0.8105.1_chrome_installer_uncompressed.exe)  |
 
 <details>
 <summary>Full SHA-256 (sha256sum -c)</summary>
@@ -88,7 +88,7 @@ x86 157.0.8092.0_chrome_installer_uncompressed.exe 69ae98a2a1585a04c70ee26cba386
 ```
 x64 158.0.8105.0_chrome_installer_uncompressed.exe 167563b88cde802fee5587d026d68b15bd8bce5c2885b83385e4cd9f8a05d34a
 arm64 158.0.8105.0_chrome_installer_uncompressed.exe 7eaf5eaa2b40d8ead4331bdd3495fe73c3b41bbb21aeee867cc2c883a2f03253
-x86 158.0.8105.0_chrome_installer_uncompressed.exe c96385d4d61a939e19d2b637763ce867cb55fbeab0442305980abfc506173dcc
+x86 158.0.8105.1_chrome_installer_uncompressed.exe cd26fa368f6bcbd67efd229f7e96801f81b6237518a3b74b3ae3829c2c73c9a6
 ```
 
 </details>
